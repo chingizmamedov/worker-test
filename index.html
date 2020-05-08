@@ -1,1 +1,22 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="worker"Worker off></div>
+
+
+
+    <script>
+
+
+        const isWorker = navigator.serviceWorker
+        if(isWorker) {
+            document.getElementById("worker").innerHTML = "worker on"
+        }
+    </script>
+</body>
+</html>

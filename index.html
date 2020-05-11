@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Worker</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Theme for worker</h1>
-    <div id="worker"Worker off></div>
+    <div id="worker" Worker off></div>
 
-
-
-    <script>
-
-
-        const isWorker = navigator.serviceWorker
-        if(isWorker) {
-            document.getElementById("worker").innerHTML = "worker on"
-        }
-    </script>
-</body>
+    <script src="/app.js"></script>
+    <script src="/sw.js"></script>
+    <script src="/script.js"></script>
+  </body>
 </html>

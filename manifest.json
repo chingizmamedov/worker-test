@@ -1,0 +1,8 @@
+{
+  "name": "Worker testing",
+  "short_name": "worker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Testin servic worker."
+}

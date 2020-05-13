@@ -5,11 +5,9 @@
   "display": "standalone",
   "background_color": "#fff",
   "description": "Testin servic.",
-  "icons": [
-    {
-      "src": "assets/icon/dark_logo_white_background.jpg",
-      "sizes": "48x48",
-      "type": "image/png"
-    }
-  ]
+  "icons": [{
+    "src": "logo192.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }]
 }

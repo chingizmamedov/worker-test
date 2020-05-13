@@ -1,0 +1,154 @@
+{
+  "playlist": {
+    "id": 105,
+    "name": "sam",
+    "defaultDisplayTypeID": 0,
+    "displayTypeIDToSave": 28,
+    "companyID": 1,
+    "slides": [
+      {
+        "id": 3162,
+        "orderID": 0,
+        "name": "Slide 2",
+        "duration": 6,
+        "stringID": "801c7b82-7439-2951-08ab-7b542def5b3b",
+        "bgColor": "#ffffff",
+        "items": [
+          {
+            "id": 3138,
+            "index": 1,
+            "contentType": "video",
+            "width": 1920,
+            "height": 1080,
+            "left": 0,
+            "top": 0,
+            "src": "https://qmeter-web-images.s3-us-west-2.amazonaws.com/ae77d2f6-42dd-4a18-823e-6d3d94888487.mp4",
+            "stringID": "ac8ad133-2953-3b48-9caa-66bf61b72c73",
+            "property": "{}",
+            "fontSize": 14,
+            "loop": true,
+            "mute": false,
+            "scrollingText": false,
+            "name": "sam15.mp4",
+            "scrollingTextSpeed": 10,
+            "scrollingDirection": "left"
+          }
+        ]
+      },
+      {
+        "id": 3163,
+        "orderID": 1,
+        "name": "Slide 2",
+        "duration": 15,
+        "stringID": "3ed1d9e4-c497-39a7-22bd-77e2caf7f944",
+        "bgColor": "#ffffff",
+        "items": [
+          {
+            "id": 3140,
+            "index": 4,
+            "contentType": "video",
+            "width": 800,
+            "height": 600,
+            "left": 326,
+            "top": 480,
+            "src": "https://qmeter-web-images.s3-us-west-2.amazonaws.com/13869bbe-07fc-4754-b8de-ab3fe6c55cd4.mp4",
+            "stringID": "ba583740-dab2-e53b-8749-3882c2e63884",
+            "property": "{}",
+            "fontSize": 14,
+            "loop": true,
+            "mute": false,
+            "scrollingText": false,
+            "name": "sam13.mp4",
+            "scrollingTextSpeed": 10,
+            "scrollingDirection": "left"
+          },
+          {
+            "id": 3139,
+            "index": 1,
+            "contentType": "image",
+            "width": 800,
+            "height": 600,
+            "left": 1120,
+            "top": 480,
+            "src": "https://qmeter-web-images.s3-us-west-2.amazonaws.com/c8d2b541-069c-4d40-89a3-ae038d319d74.jpg",
+            "stringID": "c675ba1c-77a1-22c9-5ab5-3ed8ee444f00",
+            "property": "{}",
+            "fontSize": 14,
+            "loop": true,
+            "mute": true,
+            "scrollingText": false,
+            "name": "1495412_802587603134494_2460636326856549882_o.jpg",
+            "scrollingTextSpeed": 10,
+            "scrollingDirection": "left"
+          },
+          {
+            "id": 3141,
+            "index": 3,
+            "contentType": "text",
+            "width": 1920,
+            "height": 120,
+            "left": 0,
+            "top": 184,
+            "src": "null",
+            "bgColor": "#ffffff",
+            "color": "#444a59",
+            "stringID": "ff481f2f-3cb2-89ed-880d-df03009f8f41",
+            "property": "{}",
+            "fontSize": 16,
+            "itemText": "<p><span style=\"font-size: 50px;\">Tekst sade</span></p>",
+            "loop": true,
+            "mute": true,
+            "scrollingText": true,
+            "scrollingTextSpeed": 30,
+            "scrollingDirection": "left"
+          }
+        ]
+      },
+      {
+        "id": 3164,
+        "orderID": 2,
+        "name": "Slide 3",
+        "duration": 10,
+        "stringID": "globalSlide",
+        "bgColor": "transparent",
+        "items": [
+          {
+            "id": 3142,
+            "index": 1,
+            "contentType": "text",
+            "width": 1920,
+            "height": 120,
+            "left": 0,
+            "top": 0,
+            "src": "null",
+            "bgColor": "#ffffff",
+            "color": "#444a59",
+            "stringID": "64b129f1-43cd-441c-610b-a644c9644271",
+            "property": "{}",
+            "fontSize": 16,
+            "itemText": "<p><span style=\"font-size: 52px;\">Global text</span></p>",
+            "loop": true,
+            "mute": true,
+            "scrollingText": true,
+            "scrollingTextSpeed": 40,
+            "scrollingDirection": "left"
+          }
+        ]
+      }
+    ]
+  },
+  "displayType": {
+    "id": 28,
+    "name": "FULL HD 1080 LANDSCAPE",
+    "description": "",
+    "width": 1920,
+    "height": 1080,
+    "isStandard": true,
+    "companyID": 0,
+    "createdBy": "SYSTEM",
+    "createdAt": "2018-09-27T13:25:40.772Z"
+  },
+  "schedule": null,
+  "schedulePlaylists": null,
+  "defaultPlaylist": null
+}

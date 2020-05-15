@@ -1,43 +1,62 @@
-let slides = [];
-slidesUrls = [];
+let slides = [],
+	slidesUrls = [],
+	slidesCount = 0,
+	currentSlide = 0;
 
 // console.log(d);
-fetch("https://dsapi.testqmeter.net/v1/display/samsam")
-	.then((reponse) => reponse.json())
-	.then((reponse) => {
-		slides = reponse.playlist.slides;
-		console.log("slides", slides[0]);
 
-		slidesUrls = slides[0].items.map((item) => item.src);
+function changeVideo() {
+	let src = slides[currentSlide].items[0].src;
+	addVideo(src);
+	if (currentSlide === slidesCount) {
+		currentSlide = 0;
+	} else {
+		++currentSlide;
+	}
+}
+
+function addVideo(src) {
+	let element = document.createElement("video");
+	element.id = "video";
+	element.width = "1920";
+	element.height = "1080";
+	element.setAttribute("type", "video/mp4");
+	element.setAttribute("autoplay", "");
+	element.setAttribute("controls", "");
+	element.setAttribute("playsinline", "");
+	element.setAttribute("preload", "");
+	element.classList.add("video-content");
+	element.muted = true;
+	let elementSource = document.createElement("source");
+	elementSource.src = src;
+	element.append(elementSource);
+	document.getElementById("video-wrap").innerHTML = "";
+	document.getElementById("video-wrap").append(element);
+}
+
+function addEndEvent() {
+	let element = document.querySelector(".video-content");
+	element.addEventListener("ended", function () {
+		changeVideo();
+	});
+}
+
+fetch("https://dsapi.testqmeter.net/v1/display/samsam")
+	.then((response) => response.json())
+	.then((response) => {
+		slides = response.playlist.slides;
 	})
 	.then(() => {
-		console.log("slides", slides);
-
-		slidesUrls.forEach((elementItem, index) => {
-			if (index > 0) return;
-			console.log("element", elementItem);
-			let element = document.createElement("video");
-			element.id = "video";
-			element.width = "1920";
-			element.height = "1080";
-			element.setAttribute("autoplay", true);
-			element.setAttribute("controls", true);
-			element.setAttribute("loop", true);
-			element.muted = true;
-			let elementSource = document.createElement("source");
-			elementSource.src = elementItem;
-			element.append(elementSource);
-			console.log("element", element);
-			document.getElementById("video-wrap").append(element);
-		});
+		changeVideo();
+		addEndEvent();
 	})
 	.then(() => {});
 
 function checkDifference() {
 	fetch("https://dsapi.testqmeter.net/v1/display/samsam")
-		.then((reponse) => reponse.json())
-		.then((reponse) => {
-			console.log(reponse.playlist.slides);
+		.then((response) => response.json())
+		.then((response) => {
+			console.log(response.playlist.slides);
 		});
 	setTimeout(checkDifference, 5000);
 }

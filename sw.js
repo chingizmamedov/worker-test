@@ -20,7 +20,6 @@ self.addEventListener("activate", (evt) => {
 self.addEventListener("fetch", (evt) => {
 	evt.respondWith(
 		caches.open(cacheName).then(function (cache) {
-			console.log("evt request", evt.request);
 			return cache.match(evt.request).then(function (response) {
 				return (
 					response ||

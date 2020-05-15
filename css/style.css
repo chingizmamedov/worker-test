@@ -22,3 +22,12 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+#display-byte {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	padding: 20px;
+	background-color: white;
+	color: #444;
+}
